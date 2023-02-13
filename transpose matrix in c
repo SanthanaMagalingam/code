@@ -1,0 +1,29 @@
+#include <stdio.h>
+
+int main()
+{
+  int a,b;
+  printf("\nenter the row & column u want to create:");
+  scanf("%d  %d", &a, &b);
+  int array[a][b];
+  printf("%d %d",a,b);
+  printf("\nenter the element:\n");
+  for(int r=0;r<a;r++)
+  {
+      for(int c=0;c<b;c++)
+      {
+          scanf("%d",&array[r][c]);
+          }
+  }
+  printf("\n\t*****  transpose of matrix ****\n\n");
+  int i,j;
+  for(i=0;i<b;i++)
+  {
+      for(j=0;j<a;j++)
+      {
+      printf("%d\t",array[j][i]);
+      }
+      printf("\n\n");
+  }
+
+}
