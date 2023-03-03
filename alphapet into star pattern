@@ -1,0 +1,659 @@
+#include <stdio.h>
+void A();
+void B();
+void C();
+void D();
+void E();
+void F();
+void G();
+void H();
+void I();
+void J();
+void K();
+void L();
+void M();
+void N();
+void O();
+void P();
+void Q();
+void R();
+void S();
+void T();
+void U();
+void V();
+void W();
+void X();
+void Y();
+void Z();
+int main()
+{
+    while(1)
+    {
+        char opt;
+        scanf("%c",&opt);
+        switch(opt)
+        {
+        case 'a':
+            A();
+            printf("\n");
+            break;
+        case 'b':
+            B();
+            printf("\n");
+            break;
+        case 'c':
+            C();
+            printf("\n");
+            break;
+        case 'd':
+            D();
+            printf("\n");
+            break;
+        case 'e':
+            E();
+            printf("\n");
+            break;
+        case 'f':
+            F();
+            printf("\n");
+            break;
+        case 'g':
+            G();
+            printf("\n");
+            break;
+        case 'h':
+            H();
+            printf("\n");
+            break;
+        case 'i':
+            I();
+            printf("\n");
+            break;
+        case 'j':
+            J();
+            printf("\n");
+            break;
+        case 'k':
+            K();
+            printf("\n");
+            break;
+        case 'l':
+            L();
+            printf("\n");
+            break;
+        case 'm':
+            M();
+            printf("\n");
+            break ;
+        case 'n':
+            N();
+            printf("\n");
+            break;
+        case 'o':
+            O();
+            printf("\n");
+            break;
+        case 'p':
+            P();
+            printf("\n");
+            break;
+        case 'q':
+            Q();
+            printf("\n");
+            break;
+        case 'r':
+            R();
+            printf("\n");
+            break;
+        case 's':
+            S();
+            printf("\n");
+            break;
+        case 't':
+            T();
+            printf("\n");
+            break;
+        case 'u':
+            U();
+            printf("\n");
+            break;
+        case 'v':
+            V();
+            printf("\n");
+            break;
+        case 'w':
+            W();
+            printf("\n");
+            break;
+        case 'x':
+            X();
+            printf("\n");
+            break;
+        case 'y':
+            Y();
+            printf("\n");
+            break;
+        case 'z':
+            Z();
+            printf("\n");
+            break;
+        }
+    }
+}
+void A()
+{
+    for(int i=1;i<=5;i++)
+    {
+        printf("\t");
+        for(int j=01;j<=5;j++)
+        {
+            if(j==1 || j==5 || i==1 || i==3)
+            {
+                printf("# ");
+            }
+            else
+            {
+                printf("  ");
+            }
+        }
+        printf("\n");
+    }
+}
+void B()
+{
+    for(int i=1;i<=5;i++)
+    {
+        printf("\t");
+        for(int j=1;j<=5;j++)
+        {
+            if(j==1 || (j==5 && i%2==0) ||(i==1 && j!=5) || (i==5 && j!=5) || (i==3 && j!=5))
+            {
+                printf("# ");
+            }
+            else
+            {
+                printf("  ");
+            }
+        }
+        printf("\n");
+    }
+}
+void C()
+{
+    for(int i=1;i<=5;i++)
+    {
+        printf("\t");
+        for(int j=1;j<=5;j++)
+        {
+            if(i==1 || i==5 || j==1)
+            {
+                printf("# ");
+            }
+            else
+            {
+                printf("  ");
+            }
+        }
+        printf("\n");
+    }
+}
+void D()
+{
+    for(int i=1;i<=5;i++)
+    {
+        printf("\t");
+        for(int j=1;j<=5;j++)
+        {
+            if(j==1 || (i==1 && j!=5) || (i==5 && j!=5) || (j==5 && i!=1 && i!=5))
+            {
+                printf("# ");
+            }
+            else
+            {
+                printf("  ");
+            }
+
+        }
+        printf("\n");
+    }
+}
+void E()
+{
+    for(int i=1;i<=5;i++)
+    {
+        printf("\t");
+        for(int j=1;j<=5;j++)
+        {
+            if(j==1 || i%2==1)
+            {
+                printf("# ");
+            }
+            else
+            {
+                printf("  ");
+            }
+
+        }
+        printf("\n");
+    }
+}
+void F()
+{
+    for(int i=1;i<=5;i++)
+    {
+        printf("\t");
+        for(int j=1;j<=5;j++)
+        {
+            if(j==1 || i==1 || i==3)
+            {
+                printf("# ");
+            }
+            else
+            {
+                printf("  ");
+            }
+
+        }
+        printf("\n");
+    }
+}
+void G()
+{
+    for(int i=1;i<=5;i++)
+    {
+        printf("\t");
+        for(int j=1;j<=5;j++)
+        {
+            if(i==1 || i==5 || (j==5 && i!=2) || j==1 || (i==3 && j!=2))
+            {
+                printf("# ");
+            }
+            else
+            {
+                printf("  ");
+            }
+
+        }
+        printf("\n");
+    }
+}
+void H()
+{
+    for(int i=1;i<=5;i++)
+    {
+        printf("\t");
+        for(int j=1;j<=5;j++)
+        {
+            if(j==1 || j==5 || i==3)
+            {
+                printf("# ");
+            }
+            else
+            {
+                printf("  ");
+            }
+
+        }
+        printf("\n");
+    }
+}
+void I()
+{
+    for(int i=1;i<=5;i++)
+    {
+        printf("\t");
+        for(int j=1;j<=5;j++)
+        {
+            if(i==1 || i==5 || j==3)
+            {
+                printf("# ");
+            }
+            else
+            {
+                printf("  ");
+            }
+
+        }
+        printf("\n");
+    }
+}
+void J()
+{
+    for(int i=1;i<=5;i++)
+    {
+        printf("\t");
+        for(int j=1;j<=5;j++)
+        {
+            if(i==1 || (i==5 && j<4) || j==3 ||(i==4 && j==1))
+            {
+                printf("# ");
+            }
+            else
+            {
+                printf("  ");
+            }
+
+        }
+        printf("\n");
+    }
+}
+void K()
+{
+    for(int i=1;i<=5;i++)
+    {
+        printf("\t");
+        for(int j=1;j<=5;j++)
+        {
+            if(j==1 || (i==3 && j<4) || (i==2 && j==4) ||(i==4 && j==4) || (i==1 && j==5) || (i==5 && j==5))
+            {
+                printf("# ");
+            }
+            else
+            {
+                printf("  ");
+            }
+
+        }
+        printf("\n");
+    }
+}
+void L()
+{
+    for(int i=1;i<=5;i++)
+    {
+        printf("\t");
+        for(int j=1;j<=5;j++)
+        {
+            if(j==1 || i==5)
+            {
+                printf("# ");
+            }
+            else
+            {
+                printf("  ");
+            }
+
+        }
+        printf("\n");
+    }
+}
+void M()
+{
+    for(int i=1;i<=5;i++)
+    {
+        printf("\t");
+        for(int j=1;j<=5;j++)
+        {
+            if(j==1 || j==5 || (i==3 && j==3) || (i==2 && (j==2 || j==4)))
+            {
+                printf("# ");
+            }
+            else
+            {
+                printf("  ");
+            }
+
+        }
+        printf("\n");
+    }
+}
+void N()
+{
+    for(int i=1;i<=5;i++)
+    {
+        printf("\t");
+        for(int j=1;j<=5;j++)
+        {
+            if(j==1 || j==5 || i==j)
+            {
+                printf("# ");
+            }
+            else
+            {
+                printf("  ");
+            }
+
+        }
+        printf("\n");
+    }
+}
+void O()
+{
+    for(int i=1;i<=5;i++)
+    {
+        printf("\t");
+        for(int j=1;j<=5;j++)
+        {
+            if(j==1 || j==5 || i==1 || i==5)
+            {
+                printf("# ");
+            }
+            else
+            {
+                printf("  ");
+            }
+
+        }
+        printf("\n");
+    }
+}
+void P()
+{
+    for(int i=1;i<=5;i++)
+    {
+        printf("\t");
+        for(int j=1;j<=5;j++)
+        {
+            if(j==1 || (j==5  && i<4) || i==3 || i==1)
+            {
+                printf("# ");
+            }
+            else
+            {
+                printf("  ");
+            }
+
+        }
+        printf("\n");
+    }
+}
+void Q()
+{
+    for(int i=1;i<=5;i++)
+    {
+        printf("\t");
+        for(int j=1;j<=5;j++)
+        {
+            if((j==1) || (j==5) || (i==1) || (i==5)||(i==4 && j==4))
+            {
+                printf("# ");
+            }
+            else
+            {
+                printf("  ");
+            }
+
+        }
+        printf("\n");
+    }
+    printf("\t          #\n");
+}
+void R()
+{
+    for(int i=1;i<=5;i++)
+    {
+        printf("\t");
+        for(int j=1;j<=5;j++)
+        {
+            if(j==1 || (j==5 && (i==2 || i==5)) || (i==3 && j<5) || (i==1 && j<5) || (i==4 && j==4))
+            {
+                printf("# ");
+            }
+            else
+            {
+                printf("  ");
+            }
+
+        }
+        printf("\n");
+    }
+}
+void S()
+{
+    for(int i=1;i<=5;i++)
+    {
+        printf("\t");
+        for(int j=1;j<=5;j++)
+        {
+            if(i==1 || i==5 || i==3 || (j==1 && i!=4) || (j==5 && i!=2))
+            {
+                printf("# ");
+            }
+            else
+            {
+                printf("  ");
+            }
+
+        }
+        printf("\n");
+    }
+}
+
+void T()
+{
+    for(int i=1;i<=5;i++)
+    {
+        printf("\t");
+        for(int j=1;j<=5;j++)
+        {
+            if(i==1 || j==3)
+            {
+                printf("# ");
+            }
+            else
+            {
+                printf("  ");
+            }
+
+        }
+        printf("\n");
+    }
+}
+void U()
+{
+    for(int i=1;i<=5;i++)
+    {
+        printf("\t");
+        for(int j=1;j<=5;j++)
+        {
+            if(j==1 || j==5 || i==5)
+            {
+                printf("# ");
+            }
+            else
+            {
+                printf("  ");
+            }
+
+        }
+        printf("\n");
+    }
+}
+void V()
+{
+    for(int i=1;i<=5;i++)
+    {
+        printf("\t");
+        for(int j=1;j<=5;j++)
+        {
+            if((j==1 && i<4) || (j==5  && i<4) || (i==5 && j==3) || (i==4 && (j==2 || j==4)))
+            {
+                printf("# ");
+            }
+            else
+            {
+                printf("  ");
+            }
+
+        }
+        printf("\n");
+    }
+}
+void W()
+{
+    for(int i=1;i<=5;i++)
+    {
+        printf("\t");
+        for(int j=1;j<=5;j++)
+        {
+            if(j==1 || j==5 || (i==3 && j==3) || (i==4 && (j==2 || j==4)))
+            {
+                printf("# ");
+            }
+            else
+            {
+                printf("  ");
+            }
+
+        }
+        printf("\n");
+    }
+}
+void X()
+{
+    for(int i=1;i<=5;i++)
+    {
+        printf("\t");
+        for(int j=1;j<=5;j++)
+        {
+            if(i==j || i+j==6)
+            {
+                printf("# ");
+            }
+            else
+            {
+                printf("  ");
+            }
+
+        }
+        printf("\n");
+    }
+}void Y()
+{
+    for(int i=1;i<=5;i++)
+    {
+        printf("\t");
+        for(int j=1;j<=5;j++)
+        {
+            if((i==j && i<4) || (i+j==6 && i<4) || (j==3 && (i==4 ||i==5)))
+            {
+                printf("# ");
+            }
+            else
+            {
+                printf("  ");
+            }
+
+        }
+        printf("\n");
+    }
+}void Z()
+{
+    for(int i=1;i<=5;i++)
+    {
+        printf("\t");
+        for(int j=1;j<=5;j++)
+        {
+            if(i==1 || i==5 || i+j==6)
+            {
+                printf("# ");
+            }
+            else
+            {
+                printf("  ");
+            }
+
+        }
+        printf("\n");
+    }
+}
