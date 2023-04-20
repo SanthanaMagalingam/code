@@ -1,0 +1,77 @@
+#include <stdio.h>
+#include <string.h>
+
+void check();
+int main()
+{
+    char s[1000];
+    scanf("%s",s);
+    int n=2*(strlen(s));
+    char arr[n+1];
+    int j=0;
+    for(int i=0;i<n;i+=2)
+    {
+        arr[i]='#';
+        arr[i+1]=s[j];
+        j++;
+    }
+    arr[n]='#';
+    for(int i=0;i<n+1;i++)
+    {
+        printf("%c",arr[i]);
+    }
+    
+    int a[n+1];
+    a[0]=0;
+    a[n]=0;
+    int x=1;
+    for(int i=1;i<n;i++)
+    {
+        x=1;
+        check(n,x,arr,a,i);
+    }
+    printf("\n");
+    
+    /*  
+    for(int i=0;i<n+1;i++)
+    {
+        printf("%d ",a[i]);
+    }
+    */  
+    
+    x=a[0];
+    int t=0;
+    for(int i=0;i<n;i++)
+    {
+        if(x<a[i])
+        {
+            x=a[i];
+            t=i;
+        }
+    }
+    printf("\n");
+    for(int i=t-x;i<=t+x;i++)
+    {
+        if(arr[i]!='#')
+        {
+            printf("%c",arr[i]);
+        }
+    }
+
+}
+
+void check(int n,int x,char arr[n+1],int a[n+1],int i)
+{
+    if(arr[i-x]==arr[i+x] && i-x>=0 && i+x<=n)
+    {
+        x++;
+        check(n,x,arr,a,i);
+    }
+    else
+    {
+        a[i]=x-1;
+    }
+}
+
+
+
