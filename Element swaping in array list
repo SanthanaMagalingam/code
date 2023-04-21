@@ -1,0 +1,31 @@
+//swap element in array list
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Scanner;
+
+public class color{
+    public static void main(String[] args) {
+        Scanner sc =new Scanner(System.in);
+        ArrayList<String> obj = new ArrayList<String>();
+        for (int i = 0; i < 5; i++) {
+            String str =sc.nextLine();
+            obj.add(str);
+        }
+
+        System.out.println(obj);
+
+        int a =sc.nextInt();
+        int b= sc.nextInt();
+
+        String temp =obj.get(a);
+        obj.set(a, obj.get(b));
+        obj.set(b,temp);
+
+        System.out.println(obj);
+        
+        //Collections.swap(obj, a, b);
+        //System.out.println(obj);
+
+    }
+}
